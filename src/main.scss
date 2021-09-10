@@ -1,30 +1,69 @@
-
+body * {
+    list-style-type:none;
+}
 .header{
-    position: absolute;
     width: 1000px;
     height: 1000px;
     background-color:red;
     margin: 0 auto;
-    z-index: 0;
 }
-.header-wrapper{
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-color: rgba(255, 255, 255, 0.5);
-    top: 200px;
-    left: 200px;
-    z-index: 1;
+.header-menu{
+    width: 800px;
+    height: 200px;
+   
 }
-button{
-    position: absolute;
-    font-size: 20px;
-    border-radius: 50%;
-    background-color: rgba(110, 110, 110, 0.5);
-    top: -30px;
-    left: 490px;
+.header-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
-.button:hover{
+.header-item{
+    margin-left: 50px;
+}
+.catalog{
+    position: relative;
+}
+.catalog-list{
     background-color: black;
-    color: white;
+    color: blanchedalmond;
+    position: absolute;
+    left: 75%;
+    top: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.car,
+.bus,
+.moto{
+    position: relative;
+}
+.car-item,
+.bus-item,
+.moto-item{
+    background-color: blue;
+    color: chartreuse;
+    
+}
+.car-list,
+.bus-list,
+.moto-list{
+    display: none;
+    position: absolute;
+   
+}
+.catalog:hover .catalog-list{
+    display: block;
+
+}
+.car:hover .car-list{
+    display: block;
+}
+.bus:hover .bus-list{
+    display: block;
+}
+.moto:hover .moto-list{
+    display: block;
 }

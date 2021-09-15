@@ -1,17 +1,26 @@
 
-.item{
-    margin: 20px;
-    width: 275px; 
-    height: 120px;
-}
-.complete{
-    display:none;
-}
+.accordion{
+display: flex;
 
-.more{
-    background:lightblue;
-    color:navy;
-    font-size:13px;
-    padding:3px;
+}
+.accordion_end{
+display: flex;
+justify-content: right;
+padding-right: 15px;
+}
+.accordion_content{
+    max-height: 110px;
+    overflow: hidden;
+    padding: 15px;
+    
+}
+.accordion_input{
+    display: none;
+}
+.accordion_opener{
+    color: orange;
     cursor:pointer;
+}
+.accordion_input:checked ~ .accordion_content{
+    max-height: 100vh;
 }

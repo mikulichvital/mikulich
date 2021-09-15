@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="./main.scss">
     <title>CAT</title>
     <script src="./js/main.js" defer></script>
-    <script
-  src="http://code.jquery.com/jquery-1.5.2.js"
-  ></script>
   </head>
 
 <body>
@@ -17,24 +14,33 @@
      <div class="header_wrapper">
       <div class="header_logo">
         <a href="/" class="header_logo-link">
-        <img src="./img/Cat-26.jpg" alt="cat_logo" class="header_logo-link">
+        <img src="./img/cat_logo1.png" alt="cat_logo" class="header_logo-link">
         </a>
+        <div class="header_logo_content">
+          <div class="header_logo_text1">black</div>
+          <div class="header_logo_text2">Cat</div>
+        </div>
       </div>
       <nav class="header_nav">
         <ul style="list-style-type:none" class="header_list">
           <li class="header_item">
+            <img src="./img/home2.png" alt="home" class="header_img">
             <a href="#!" class="header_link">home</a>
           </li>
           <li class="header_item">
+            <img src="./img/about2.png" alt="about" class="header_img">
            <a href="#!" class="header_link">about</a>
          </li>
          <li class="header_item">
+           <img src="./img/pencil.png" alt="work" class="header_img">
            <a href="#!" class="header_link">work</a>
          </li>
          <li class="header_item">
+           <img src="./img/globe.png" alt="blog" class="header_img">
            <a href="#!" class="header_link">blog</a>
          </li>
          <li class="header_item">
+           <img src="./img/mail.png" alt="contact" class="header_img">
            <a href="#!" class="header_link">contact</a>
          </li>
         </ul>
@@ -57,10 +63,12 @@
    </section>
    <div class="wrapper">
      <div class="item1">
-     @@include('./partials/first/_item.html')
-     @@include('./partials/first/_item.html')
-     @@include('./partials/first/_item.html')
-     @@include('./partials/first/_item.html')
+     @@include('./partials/first/_item.html',
+     {"content_text1": " Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.  Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.",
+     "content_text2": " Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.  Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.",
+     "content_text3": " Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.  Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.",
+     "content_text4": " Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.  Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them."
+    })
 
      </div>
    </div>
@@ -72,32 +80,24 @@
     <div class="wrapper">
       <div class="content_wrapper">
        @@include('./partials/secondary/_secondary.html',
-       {"content_text2": "Hoof is our rost talanted designer. However he's not thr talkative type and i would advise not getting on the wrong side of him.",
-      })
-       <div class="content_header">
-        <div class="content_text1">
-          <span style="color: #6e6d6b">Nibs</span><span style="color: orange"> - CEO/Director</span>
-        </div>
-        <div class="content_img">
-          <img src="./img/krolik.jpg" alt="CEO/Director" class="img1">
-        </div>
-        <div class="content_text2">
-         Nibs is our go to woman. She's the ceo/director of orange rabbit and runs fast when she has too.
-        </div>
-      </div>  
-      <div class="content_header">
-        <div class="content_text1">
-          <span style="color: #6e6d6b">Squawk</span><span style="color: orange"> - Developer</span>
-        </div>
-        <div class="content_img">
-          <img src="./img/straus.jpg" alt="Developer" class="img1">
-        </div>
-        <div class="content_text2">
-          Squawk is no social bunny. But when it comes to programming he stands out from the crowd.
-        </div>
-      </div>     
-      </div> 
-    </div>
+       {"header1": "Hoof",
+       "header2": "- Lead Designer",
+         "content_text": "Hoof is our rost talanted designer. However he's not thr talkative type and i would advise not getting on the wrong side of him.",
+       "path": "./img/horse.jpg",
+       })
+       @@include('./partials/secondary/_secondary.html',
+       {"header1": "Nibs",
+       "header2": "- CEO/Director",
+         "content_text": "Nibs is our go to woman. She's the ceo/director of orange rabbit and runs fast when she has too.",
+       "path": "./img/krolik.jpg",
+       })
+       @@include('./partials/secondary/_secondary.html',
+       {"header1": "Squawk",
+       "header2": "- Developer",
+         "content_text": "Squawk is no social bunny. But when it comes to programming he stands out from the crowd.",
+       "path": "./img/straus.jpg",
+       })
+       </div>
     <div class="wrapper">
       <div class="intro_form">
         Send us a message...
@@ -112,12 +112,15 @@
          <input type="email" name="email_address" id="email_address">
          <label for="fname"><span style="color:orange">Message:</span></label>
          <textarea name="comments" id="comments" maxlength="500"></textarea>
-         <div class="form_end">
-          <button class="intro_end">Submit</button>
-         </div>
        </form>
+       <div class="intro_end">
+        <button class="button" >Submit</button>
+       </div>
       </div> 
     </div>
  </main>
+ <div class="footer">
+  COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.
+ </div>
 </body> 
 </html>

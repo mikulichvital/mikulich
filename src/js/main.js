@@ -1,6 +1,17 @@
-//here will by JavaScript code ...
-$(".more").toggle(function(){
-    $(this).text("less..").siblings(".complete").show();    
-}, function(){
-    $(this).text("read more..").siblings(".complete").hide();    
-});
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });

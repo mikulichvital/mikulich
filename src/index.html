@@ -3,124 +3,152 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./fonts/PTSans-Regular.ttf">
+    <link rel="stylesheet" href="./fonts/PTSans-Italic.ttf">
+    <link rel="stylesheet" href="./fonts/PTSans-Bold.ttf">
+    <link rel="stylesheet" href="./fonts/PTSans-BoldItalic.ttf">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="./main.scss">
-    <title>CAT</title>
+    <title>NEWS</title>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/main.js" defer></script>
   </head>
 
 <body>
- <header class="header">
+ <div class="main">
    <div class="wrapper">
-     <div class="header_wrapper">
-      <div class="header_logo">
-        <a href="/" class="header_logo-link">
-        <img src="./img/cat_logo1.png" alt="cat_logo" class="header_logo-link">
-        </a>
-        <div class="header_logo_content">
-          <div class="header_logo_text1">black</div>
-          <div class="header_logo_text2">Cat</div>
-        </div>
-      </div>
-      <nav class="header_nav">
-        <ul style="list-style-type:none" class="header_list">
-          <li class="header_item">
-            <img src="./img/home2.png" alt="home" class="header_img">
-            <a href="#!" class="header_link">home</a>
-          </li>
-          <li class="header_item">
-            <img src="./img/about2.png" alt="about" class="header_img">
-           <a href="#!" class="header_link">about</a>
+     <div class="wrapper__header">
+       <ul class="header__item">
+         <li class="header__list">
+           <button class="button__list">Hot themes</button>
          </li>
-         <li class="header_item">
-           <img src="./img/pencil.png" alt="work" class="header_img">
-           <a href="#!" class="header_link">work</a>
-         </li>
-         <li class="header_item">
-           <img src="./img/globe.png" alt="blog" class="header_img">
-           <a href="#!" class="header_link">blog</a>
-         </li>
-         <li class="header_item">
-           <img src="./img/mail.png" alt="contact" class="header_img">
-           <a href="#!" class="header_link">contact</a>
-         </li>
-        </ul>
-      </nav>
+         <li class="header__list">
+          <button class="button__list">EURO-2016 Playoffs</button>
+        </li>
+        <li class="header__list">
+          <button class="button__list">El' Classico</button>
+        </li>     
+       </ul>
+     </div>
+     <div class="swiper">
+       <div class="swiper-wrapper">
+         <div class="swiper-slide">
+           <div class="wrapper__header-content">
+             <img src="./img/Layer 160.png" alt="img__header" class="img__header">
+             <div class="wrapper__header-text">
+               <div class="text__header">
+                 Jurgen Klopp makes a sexy Liverpool
+               </div>
+               <div class="text__content">
+                 <a href="/" class="text__content">Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp</a>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="swiper-slide">
+           <div class="wrapper__header-content">
+             <img src="./img/Layer 160.png" alt="img__header" class="img__header">
+             <div class="wrapper__header-text">
+               <div class="text__header">
+                 Jurgen Klopp makes a sexy Liverpool
+               </div>
+               <div class="text__content">
+                 <a href="/" class="text__content">Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp</a>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="swiper-slide">
+           <div class="wrapper__header-content">
+             <img src="./img/Layer 160.png" alt="img__header" class="img__header">
+             <div class="wrapper__header-text">
+               <div class="text__header">
+                 Jurgen Klopp makes a sexy Liverpool
+               </div>
+               <div class="text__content">
+                 <a href="/" class="text__content">Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp</a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="swiper-pagination"></div>
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div>
+       <div class="swiper-scrollbar"></div>
+     </div>
+      @@include('./partials/first/_text-header.html', {
+      "color": "grey",
+      "HeaderName": "Main News"
+      })
+     <div class="main__news">
+       @@include('./partials/first/_main-news.html', {
+        "pathToImage": './img/main_news/main_news1.png',
+        "mainNewsHead": "The FIFA Ballon d'Or is an annual association football award given by FIFA"
+       })
+       @@include('./partials/first/_main-news.html', {
+        "pathToImage": './img/main_news/main_news2.png',
+        "mainNewsHead": "Messi got some balloons"
+       })
+       @@include('./partials/first/_main-news.html', {
+        "pathToImage": './img/main_news/main_news3.png',
+        "mainNewsHead": "CR7 also, but not so much"
+       })
+       @@include('./partials/first/_main-news.html', {
+        "pathToImage": './img/main_news/main_news4.png',
+        "mainNewsHead": "Ribery got vase!",
+        "camera": "camera"
+       })
+     </div>
+     <div class="wrapper__content">
+       <div class="content__news">
+         @@include('./partials/first/_text-header.html', {
+          "color": "blue",
+          "HeaderName": "Last News"
+          })
+          <ul class="news__item">
+            <li class="news__list">
+             <a href="" class="news__list"> Real Madrid players to gaffer: up and at 'em!</a>
+            </li>
+            <li class="news__list">
+             <a href=""> Swedes indebted to talismanic Ibrahimovic marca.com</a>
+            </li>
+            <li class="news__list"> 
+             <a href=""> 2016 European Championship to go ahead in France</a>
+            </li>
+            <li class="news__list"> 
+             <a href=""> Ancelotti: "Premier League return is my no. 1 choice"</a>
+            </li>
+            <li class="news__list">
+             <a href=""> Walters double secures Euro 2016 spot for Ireland</a>
+            </li>
+            <li class="news__list">
+             <a href=""> "They intended to set off an explosive inside the stadium" - eyewitness</a>
+            </li>
+            <li class="news__list">
+             <a href=""> Raúl bids goodbye in style</a>
+            </li>
+            <li class="news__list">
+             <a href=""> Five reasons Belgium vs. Spain was called off</a>
+            </li>
+            <li class="news__list">
+             <a href=""> Niggles won't keep Benzema out of 'Clásico'</a>
+            </li>
+            <li class="news__list"> 
+             <a href=""> Abdeslam suspected to have been near King Baudouin Stadium</a>
+            </li>
+          </ul>
+          @@include('./partials/first/_text-header.html', {
+            "color": "blue",
+            "HeaderName": "Newsfeed"
+            })
+            <div class="main__news-footer">
+              <img src="./img/main_news/Lastfeed.png" alt="Newsfeed" class="news__footer-img">
+              <a href="" class="img__text">Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark</a>
+            </div>
+       </div>
      </div>
    </div>
- </header>   
- <main class="main">
-   <section class="intro">
-     <div class="wrapper">
-       <div class="intro_wrapper">
-       <div class="intro_title">
-         Do you like cat?
-       </div>
-       <div class="intro_subtitle">
-         Do you like dog?
-       </div>
-       </div>
-     </div>
-   </section>
-   <div class="wrapper">
-     <div class="item1">
-     @@include('./partials/first/_item.html',
-     {"content_text1": " Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.  Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.",
-     "content_text2": " Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.  Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.",
-     "content_text3": " Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.  Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.",
-     "content_text4": " Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them.  Have you ever noticed that cats are always sleeping? They do this to save their energy. In the wild they would be saving their energy to go and hunt for their food. House cats obviously don’t need to do this but it just comes naturally to them."
-    })
-
-     </div>
-   </div>
-   <div class="wrapper">
-     <h1 class="intro_content">
-      Meet the team
-     </h1> 
-   </div>
-    <div class="wrapper">
-      <div class="content_wrapper">
-       @@include('./partials/secondary/_secondary.html',
-       {"header1": "Hoof",
-       "header2": "- Lead Designer",
-         "content_text": "Hoof is our rost talanted designer. However he's not thr talkative type and i would advise not getting on the wrong side of him.",
-       "path": "./img/horse.jpg",
-       })
-       @@include('./partials/secondary/_secondary.html',
-       {"header1": "Nibs",
-       "header2": "- CEO/Director",
-         "content_text": "Nibs is our go to woman. She's the ceo/director of orange rabbit and runs fast when she has too.",
-       "path": "./img/krolik.jpg",
-       })
-       @@include('./partials/secondary/_secondary.html',
-       {"header1": "Squawk",
-       "header2": "- Developer",
-         "content_text": "Squawk is no social bunny. But when it comes to programming he stands out from the crowd.",
-       "path": "./img/straus.jpg",
-       })
-       </div>
-    <div class="wrapper">
-      <div class="intro_form">
-        Send us a message...
-      </div> 
-    </div>
-    <div class="wrapper">
-      <div class="content_form">
-        <form class="Form_name">
-          <label for="fname"><span style="color:orange">Name:</span></label>
-         <input type="text" name="customer_name" id="customer_name" required>
-         <label for="fname"><span style="color:orange">Email:</span></label>
-         <input type="email" name="email_address" id="email_address">
-         <label for="fname"><span style="color:orange">Message:</span></label>
-         <textarea name="comments" id="comments" maxlength="500"></textarea>
-       </form>
-       <div class="intro_end">
-        <button class="button" >Submit</button>
-       </div>
-      </div> 
-    </div>
- </main>
- <div class="footer">
-  COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.
  </div>
 </body> 
 </html>

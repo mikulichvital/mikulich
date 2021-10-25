@@ -46,8 +46,13 @@ table {
     border-spacing: 0;
 }
 /*reset end*/ 
-
+@import'./partials/first/swiper-two.scss';
+@import'./partials/first/interesting-news.scss';
+@import'./partials/first/video.scss';
+@import'./partials/first/photo__news.scss';
+@import'./partials/first/main-news.scss';
 @import'./partials/first/text-header.scss';
+@import './partials/first/news-list.scss';
 @font-face {
     font-family: 'PT Sans';
     src: url('/fonts/PTSans-Regular.ttf');
@@ -68,13 +73,25 @@ body{
     font-family: 'PT Sans', sans-serif;
 
 }
+
+a {
+    color: #333333;
+}
+li{
+    list-style-position: inside;
+}
 .main{
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.footer{
     max-width: 940px;
     margin: 0 auto;
 }
 
 .wrapper{
-    width: 640px;
+    width: 620px;
 }
 .header__item{
     height: 30px;
@@ -109,7 +126,6 @@ body{
     font-family: 'PT Sans';
 }
 .text__content{
-    color: #333333;
     font-size: 14px;
     font-family: 'PT Sans';
     text-align: left;
@@ -140,5 +156,69 @@ body{
     color: #333333;
     font-size: 14px;
     padding-left: 10px;
-    text-align: center;
+    text-align: left;
 }
+.wrapper__content{
+    display: flex;
+    padding-top: 20px;
+}
+.side__bar{
+    padding-left: 10px;
+}
+.side__bar-video-header::before{
+    content: ' ';
+    border-bottom: #333333 solid 3px;
+    display: block;
+    flex: 1 0 auto;
+    margin-left: 5px;
+    height: 0;
+    position: relative;
+    top: 11px;
+}
+.side__bar-video-header::after{
+    content: ' ';
+    border-bottom: #333333 solid 3px;
+    display: block;
+    flex: 1 0 auto;
+    margin-left: 5px;
+    height: 0;
+    position: relative;
+    top: 11px;
+}
+
+.side__bar-video-header{
+    color: #6a0099;
+    font-size: 18px;
+    display: flex;
+    font-weight: bold;
+}
+.more__video {
+    color: #3d76cc;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .more__video::after{
+      content: ' ';
+      border-bottom: #333333 solid 5px;
+      display: block;
+  }
+  .interesting__st{
+    height: 72px;
+    display: flex;  
+    align-items: flex-end;
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: #333333 solid 3px;
+  }
+  .red{
+      color: #c80000;
+      font-family: 'PTSans-Regular';
+      font-size: 14PX;
+  }
+  .black{
+      color: #333333;
+      font-family: 'PTSans-Regular';
+      font-size: 14px;
+  }

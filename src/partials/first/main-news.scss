@@ -1,12 +1,10 @@
 .main__news1 {
     display: flex;
     flex-direction: column;
-    color: #333333;
 }
 
 .camera:after {
-    content: url(../img/Icons/photo.png);
-    display: inline;
+    content: url(../../img/icons/photo.png);
 }
 
 .main__news-img {

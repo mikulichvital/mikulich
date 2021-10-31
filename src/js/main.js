@@ -1,46 +1,33 @@
-  new Swiper('#swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  });
+const swiper = new Swiper('.swiper', {
+
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
+  },
+
+});
 
 
-  new Swiper('#swiper2', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+function openMenu(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
 
-    slidesPerView: 'auto',
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
 
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 4,
-      }, 
-      1200: {
-        slidesPerView: 6,
-      }
-    },
- 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.second_button_next',
-      prevEl: '.second_button_prev',
-      // clickable: true,
-    },
-  
-  });
+  // Get all elements with class="tablinks" and remove the class "active"
+  tabslink = document.getElementsByClassName("tabs-link");
+  for (i = 0; i < tabslink.length; i++) {
+    tabslink[i].className = tabslink[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}

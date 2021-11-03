@@ -17,6 +17,9 @@ body{
     align-items: center;
     padding: 10px 0px;
 }
+.logo-image{
+    width: 128px;
+}
 .search-form{
     margin-left: 76px;
     background: rgba(238, 238, 238, 0.71);
@@ -262,8 +265,6 @@ body{
     margin-bottom: 47px;
     
 }
-
-
 .delivery-week{
     padding: 100px 0;
 }
@@ -278,6 +279,7 @@ body{
     margin-bottom: 62px;
     padding: 0;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 .tabs-link{
     font-size: 20px;
@@ -293,15 +295,21 @@ body{
 }
 .tabs-link:active{
     color: #f37321;
-
 }
 .tabs-wrapper{
     display: flex;
     flex-wrap: wrap;
     margin: -16px;
-   
 }
-
+.tab {
+    overflow: hidden;
+}
+.tabcontent {
+    display: none;
+    padding-left: 18px;
+    margin: -18px;
+    border-top: none;
+}
 .button-outline{
     cursor: pointer;
     background-color: transparent;
@@ -328,7 +336,6 @@ body{
     flex-wrap: wrap;
     margin: -18px;
 }
-
 .footer{
     padding: 40px 0;
     background-color: #f6f6f6;
@@ -348,6 +355,7 @@ body{
 }
 .social-links{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: auto;
 }
@@ -384,6 +392,13 @@ body{
     .footer-logo{
         margin-right: 40px;
     }
+    .social-links{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 10px;
+    }
 }
 @media(max-width: 768px){
     .container{
@@ -407,26 +422,22 @@ body{
     .tabs-card{
         min-width: 100%;
     }
-    
-}
-
-
-
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    
-   
-}
-
-
-
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding-left: 18px;
-    margin: -18px;
-    border-top: none;
+    .advantages-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -18px;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-logo{
+        margin-right: 50px;
+        width: 105px;
+    }
+    .tabs-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -16px;
+        align-items: center;
+        justify-content: center;
+    }
 }

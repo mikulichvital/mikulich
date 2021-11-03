@@ -10,25 +10,24 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="./main.scss">
     <title>DIPLOM</title>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/main.js" defer></script>
   </head>
-
-
-<body>
+ <body>
    <header class="header container">
-    <a href="/" class="logo">
-        <img width="128" src="./img/logo.png" alt="logo" class="logo-image">
-    </a>
-    <form action="#" class="search-form">
+      <a href="/" class="logo">
+        <img src="./img/logo1.png" alt="logo" class="logo-image">
+     </a>
+     <form action="#" class="search-form">
         <input class="search-input" type="search" placeholder="Блюда">
         <button class="search-button">
             <img src="./img/search-icon.svg" alt="search-icon" class="search-icon">
         </button>
-    </form>
-    <div class="auth">
+     </form>
+     <div class="auth">
         <a href="#" class="login">Войти</a>
-    </div>
-    <a href="#" class="shopping-cart"><svg width="50" height="54" viewBox="0 0 50 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+     </div>
+     <a href="#" class="shopping-cart"><svg width="50" height="54" viewBox="0 0 50 54" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="24.5" cy="24.5" r="24.5" fill="#F66A15"/>
         <g clip-path="url(#clip0_5:10)">
         <path d="M35.713 16.077C35.4317 15.7394 35.0796 15.468 34.6815 15.2818C34.2835 15.0957 33.8494 14.9995 33.41 15H17.242L17.2 14.649C17.114 13.9194 16.7634 13.2467 16.2145 12.7585C15.6656 12.2702 14.9566 12.0003 14.222 12H14C13.7348 12 13.4804 12.1054 13.2929 12.2929C13.1054 12.4804 13 12.7348 13 13C13 13.2652 13.1054 13.5196 13.2929 13.7071C13.4804 13.8946 13.7348 14 14 14H14.222C14.4669 14 14.7033 14.09 14.8864 14.2527C15.0694 14.4155 15.1863 14.6397 15.215 14.883L16.591 26.583C16.7339 27.7998 17.3185 28.9218 18.2339 29.736C19.1493 30.5502 20.3319 31 21.557 31H32C32.2652 31 32.5196 30.8946 32.7071 30.7071C32.8946 30.5196 33 30.2652 33 30C33 29.7348 32.8946 29.4804 32.7071 29.2929C32.5196 29.1054 32.2652 29 32 29H21.557C20.9381 28.9983 20.3348 28.8051 19.8299 28.4471C19.3251 28.089 18.9433 27.5835 18.737 27H30.657C31.8293 27.0001 32.9643 26.5882 33.8638 25.8364C34.7633 25.0846 35.37 24.0407 35.578 22.887L36.363 18.533C36.4414 18.101 36.4237 17.6571 36.3114 17.2326C36.1991 16.8082 35.9948 16.4137 35.713 16.077V16.077ZM34.4 18.178L33.614 22.532C33.4891 23.225 33.1245 23.852 32.5839 24.3032C32.0433 24.7544 31.3612 25.0011 30.657 25H18.419L17.478 17H33.41C33.5569 16.9991 33.7022 17.0306 33.8355 17.0923C33.9689 17.1539 34.087 17.2441 34.1815 17.3566C34.276 17.4691 34.3446 17.601 34.3824 17.7429C34.4201 17.8849 34.4262 18.0334 34.4 18.178V18.178Z" fill="white"/>
@@ -43,19 +42,12 @@
         </clipPath>
         </defs>
         </svg>
-        
         <span class="shopping-counter">12</span>
-    </a>
+      </a>
    </header> 
-   <main class="mainr">
-       <div class="slider container">
-           
-       </div>
-                <!-- Slider main container -->
-            <div class="swiper container">
-                <!-- Additional required wrapper -->
+   <main class="main">
+       <div class="swiper container">
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide">
                         <div class="slide slide-text-light slide-summer">
                             <div class="slide-content">
@@ -84,7 +76,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- If we need navigation buttons -->
                <div class="slider-buttons">
                  <div class="slider-button slider-button-prev">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +90,7 @@
                     </svg>      
                  </div>
                </div>
-            </div>
+         </div>
         <div class="container">
             <div class="promo ">
                 <section class="card card-text-light sweet-basket">
@@ -178,16 +169,16 @@
               <h2 class="section-title">Категории блюд</h2>
               <ul class="tabs">
                  <li class="tabs-item">
-                   <button class="tabs-link" onclick="openMenu(event, 'Popular')">Популярные блюда</button>
+                   <button class="tabs-link" onclick="openMenu(event, 'popular')">Популярные блюда</button>
                  </li>
                  <li class="tabs-item">
-                   <button class="tabs-link" onclick="openMenu(event, 'Vegetables')">Овощное</button>
+                   <button class="tabs-link" onclick="openMenu(event, 'vegetables')">Овощное</button>
                  </li>
                  <li class="tabs-item">
-                   <button class="tabs-link" onclick="openMenu(event, 'Meat')">Мясное</button>
+                   <button class="tabs-link" onclick="openMenu(event, 'meat')">Мясное</button>
                  </li>
               </ul>
-                <div id="Popular" class="tabcontent">
+                <div id="popular" class="tabcontent">
                   <h3>Популярные блюда</h3>
                   <div class="tabs-wrapper">
                     @@include('./partials/_tabs.html', {
@@ -220,7 +211,7 @@
                     })
                   </div>  
                 </div>
-                <div id="Vegetables" class="tabcontent">
+                <div id="vegetables" class="tabcontent">
                   <h3>Овощное</h3>
                   <div class="tabs-wrapper">
                     @@include('./partials/_tabs.html', {
@@ -253,7 +244,7 @@
                     })
                   </div>  
                 </div>
-                <div id="Meat" class="tabcontent">
+                <div id="meat" class="tabcontent">
                   <h3>Мясное</h3>
                   <div class="tabs-wrapper">
                     @@include('./partials/_tabs.html', {
@@ -320,7 +311,7 @@
    <footer class="footer">
        <div class="container">
            <div class="footer-wrapper">
-            <img width="205" src="./img/logo.png" alt="" class="footer-logo">
+            <img  src="./img/logo1.png" alt="" class="footer-logo">
             <nav class="footer-nav">
                 <a href="#" class="footer-link">Доставка и оплата</a>
                 <a href="#" class="footer-link">Напишите нам</a>
@@ -354,7 +345,5 @@
            </div>
        </div>
    </footer>
-   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-   <script src="./js/main.js"></script>
 </body>
 </html>

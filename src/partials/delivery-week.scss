@@ -1,0 +1,51 @@
+
+.delivery-card{
+    margin: 0 auto;
+    position: relative;
+    width: 290px;
+    height: 182px;
+    border-radius: 38px;
+    overflow: hidden;
+    padding: 5px;
+    
+}
+.delivery-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.delivery-tag{
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494f;
+    padding: 5px 10px;
+}
+.tag-health{
+    background:#D0FD89 ;
+}
+.tag-vegetable{
+    background: #AEBC41;
+}
+.tag-meat{
+    background: #B86B78;
+}
+.tag-bird{
+    background: #D68334;
+}
+.tag-fish{
+    background: #CD6255;
+}
+.tag-baby{
+    background: #FFFDBF;
+}
+.tag-parents{
+    background: #F6FDC8;
+}
+.tag-holiday{
+    background: #FEF7FE;
+}

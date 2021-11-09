@@ -1,0 +1,47 @@
+.tabs-content{
+    margin: 18px;
+}
+.tabs-card{
+    max-width: 252px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+.tabs-image{
+    max-width: 100%;
+}
+.tabs-card-content{
+    margin: 23px;
+}
+.tabs-title{
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.tabs-description{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #b9b9be;
+}
+.tabs-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tabs-price{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #4b4b51;
+    display: block;
+    margin-bottom: 5px;
+}
+.tabs-weight{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #aaaab1;
+}

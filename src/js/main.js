@@ -22,3 +22,7 @@ function openMenu(evt, menuName) {
   document.getElementById(menuName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+document.getElementById('btn-category-popular').onclick = function (event) { openMenu(event, 'popular') };
+document.getElementById('btn-category-vegetables').onclick = function (event) { openMenu(event, 'vegetables') };
+document.getElementById('btn-category-meat').onclick = function (event) { openMenu(event, 'meat') };

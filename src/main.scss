@@ -39,14 +39,12 @@ body{
     padding-right: 18px;
     padding-left: 18px;
     cursor: pointer;
-    
 }
 .search-input{
     background-color: transparent;
     border: none;
     width: 100%;
     padding: 13px 50px 13px 20px;
-
 }
 .auth{
     margin-left: auto;
@@ -61,6 +59,9 @@ body{
     line-height: 16px;
     color: #000000;
 }
+.shopping-cart-content{
+    position: relative;
+}
 .shopping-cart{
     position: relative;
     width: 49px;
@@ -70,8 +71,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 30px;
-    
+    margin-left: 30px;  
 }
 .shopping-counter{
     position: absolute;
@@ -84,7 +84,6 @@ body{
     display: block;
     padding: 5px;
     border-radius: 50%;
-
 }
 .slide{
     position: relative;
@@ -186,11 +185,10 @@ body{
     padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
-    margin: -20px;
+    
 }
 .card{
     flex: 50%;
-    margin: 20px;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -243,6 +241,10 @@ body{
 }
 .sweet-basket{
     background-image: url(../img/sweet-basket.png) no-repeat center / cover;
+    margin: 1px;
+}
+.minimum{
+    margin: 1px;
 }
 .card-image{
     position: absolute;
@@ -256,14 +258,13 @@ body{
 .delivery-week-wrapper{
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    justify-content: center;
 }
 .section-title{
     font-weight: 500;
     font-size: 32px;
     line-height: 23px;
     margin-bottom: 47px;
-    
 }
 .delivery-week{
     padding: 100px 0;
@@ -299,15 +300,14 @@ body{
 .tabs-wrapper{
     display: flex;
     flex-wrap: wrap;
-    margin: -16px;
+    align-items: center;
+    justify-content: center;
 }
 .tab {
     overflow: hidden;
 }
 .tabcontent {
     display: none;
-    padding-left: 18px;
-    margin: -18px;
     border-top: none;
 }
 .button-outline{
@@ -334,7 +334,7 @@ body{
 .advantages-wrapper{
     display: flex;
     flex-wrap: wrap;
-    margin: -18px;
+    justify-content: center;
 }
 .footer{
     padding: 40px 0;
@@ -411,9 +411,6 @@ body{
         order: 5;
         margin: 15px 0;
     }
-    .promo{
-        flex-wrap: wrap;
-    }
 }
 @media(max-width: 576px){
     .container{
@@ -425,7 +422,6 @@ body{
     .advantages-wrapper{
         display: flex;
         flex-wrap: wrap;
-        margin: -18px;
         align-items: center;
         justify-content: center;
     }
@@ -433,11 +429,7 @@ body{
         margin-right: 50px;
         width: 105px;
     }
-    .tabs-wrapper{
-        display: flex;
+    .promo{
         flex-wrap: wrap;
-        margin: -16px;
-        align-items: center;
-        justify-content: center;
     }
 }

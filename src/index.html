@@ -5,348 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="./main.scss">
     <title>DIPLOM</title>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/main.js" defer></script>
   </head>
  <body>
-   <header class="header container">
-      <a href="/" class="logo">
-        <img src="./img/logo1.png" alt="logo" class="logo-image">
-     </a>
-     <form action="#" class="search-form">
-        <input class="search-input" type="search" placeholder="Блюда">
-        <button class="search-button">
-            <img src="./img/search-icon.svg" alt="search-icon" class="search-icon">
-        </button>
-     </form>
-     <div class="auth">
-        <a href="#" class="login">Войти</a>
-     </div>
-     <div class="shopping-cart-content">
-        <a href="#" class="shopping-cart"><svg width="50" height="54" viewBox="0 0 50 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24.5" cy="24.5" r="24.5" fill="#F66A15"/>
-            <g clip-path="url(#clip0_5:10)">
-            <path d="M35.713 16.077C35.4317 15.7394 35.0796 15.468 34.6815 15.2818C34.2835 15.0957 33.8494 14.9995 33.41 15H17.242L17.2 14.649C17.114 13.9194 16.7634 13.2467 16.2145 12.7585C15.6656 12.2702 14.9566 12.0003 14.222 12H14C13.7348 12 13.4804 12.1054 13.2929 12.2929C13.1054 12.4804 13 12.7348 13 13C13 13.2652 13.1054 13.5196 13.2929 13.7071C13.4804 13.8946 13.7348 14 14 14H14.222C14.4669 14 14.7033 14.09 14.8864 14.2527C15.0694 14.4155 15.1863 14.6397 15.215 14.883L16.591 26.583C16.7339 27.7998 17.3185 28.9218 18.2339 29.736C19.1493 30.5502 20.3319 31 21.557 31H32C32.2652 31 32.5196 30.8946 32.7071 30.7071C32.8946 30.5196 33 30.2652 33 30C33 29.7348 32.8946 29.4804 32.7071 29.2929C32.5196 29.1054 32.2652 29 32 29H21.557C20.9381 28.9983 20.3348 28.8051 19.8299 28.4471C19.3251 28.089 18.9433 27.5835 18.737 27H30.657C31.8293 27.0001 32.9643 26.5882 33.8638 25.8364C34.7633 25.0846 35.37 24.0407 35.578 22.887L36.363 18.533C36.4414 18.101 36.4237 17.6571 36.3114 17.2326C36.1991 16.8082 35.9948 16.4137 35.713 16.077V16.077ZM34.4 18.178L33.614 22.532C33.4891 23.225 33.1245 23.852 32.5839 24.3032C32.0433 24.7544 31.3612 25.0011 30.657 25H18.419L17.478 17H33.41C33.5569 16.9991 33.7022 17.0306 33.8355 17.0923C33.9689 17.1539 34.087 17.2441 34.1815 17.3566C34.276 17.4691 34.3446 17.601 34.3824 17.7429C34.4201 17.8849 34.4262 18.0334 34.4 18.178V18.178Z" fill="white"/>
-            <path d="M20.0001 36.0006C21.1047 36.0006 22.0001 35.1052 22.0001 34.0006C22.0001 32.8961 21.1047 32.0006 20.0001 32.0006C18.8956 32.0006 18.0001 32.8961 18.0001 34.0006C18.0001 35.1052 18.8956 36.0006 20.0001 36.0006Z" fill="white"/>
-            <path d="M30 36.0006C31.1046 36.0006 32 35.1052 32 34.0006C32 32.8961 31.1046 32.0006 30 32.0006C28.8954 32.0006 28 32.8961 28 34.0006C28 35.1052 28.8954 36.0006 30 36.0006Z" fill="white"/>
-            </g>
-            <circle cx="41" cy="45" r="9" fill="#FFAF19"/>
-            <path d="M39.8477 48H39.1211V43.1836L37.6641 43.7188V43.0625L39.7344 42.2852H39.8477V48ZM45.6914 48H41.9648V47.4805L43.9336 45.293C44.2253 44.9622 44.4258 44.694 44.5352 44.4883C44.6471 44.2799 44.7031 44.0651 44.7031 43.8438C44.7031 43.5469 44.6133 43.3034 44.4336 43.1133C44.2539 42.9232 44.0143 42.8281 43.7148 42.8281C43.3555 42.8281 43.0755 42.931 42.875 43.1367C42.6771 43.3398 42.5781 43.6237 42.5781 43.9883H41.8555C41.8555 43.4648 42.0234 43.0417 42.3594 42.7188C42.6979 42.3958 43.1497 42.2344 43.7148 42.2344C44.2435 42.2344 44.6615 42.3737 44.9688 42.6523C45.276 42.9284 45.4297 43.2969 45.4297 43.7578C45.4297 44.3177 45.0729 44.9844 44.3594 45.7578L42.8359 47.4102H45.6914V48Z" fill="black"/>
-            <defs>
-            <clipPath id="clip0_5:10">
-            <rect width="24" height="24" fill="white" transform="translate(13 12)"/>
-            </clipPath>
-            </defs>
-            </svg>
-            
-          </a>
-          <span class="shopping-counter">12</span>
-    </div>
-   </header> 
-   <main class="main">
-       <div class="swiper container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slide slide-text-light slide-summer">
-                            <div class="slide-content">
-                              <h2 class="slide-title">Неделя летних овощей</h2>
-                              <p class="slide-text">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</p>
-                              <a href="#" class="button button-primary">Заказать со скидкой</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide slide-text-light slide-autumn">
-                            <div class="slide-content">
-                              <h2 class="slide-title">Неделя осенних овощей</h2>
-                              <p class="slide-text">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</p>
-                              <a href="#" class="button button-primary">Заказать со скидкой</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide slide-text-light slide-spring">
-                            <div class="slide-content">
-                              <h2 class="slide-title">Неделя весенних овощей</h2>
-                              <p class="slide-text">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</p>
-                              <a href="#" class="button button-primary">Заказать со скидкой</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               <div class="slider-buttons">
-                 <div class="slider-button slider-button-prev">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="#EBEBEB" fill-opacity="0.7"/>
-                        <path d="M24.752 31.994L14.879 22.121C14.3166 21.5584 14.0006 20.7955 14.0006 20C14.0006 19.2045 14.3166 18.4416 14.879 17.879L24.746 8.01201L26.16 9.42601L16.293 19.293C16.1055 19.4805 16.0002 19.7348 16.0002 20C16.0002 20.2652 16.1055 20.5195 16.293 20.707L26.166 30.58L24.752 31.994Z" fill="#F66A15"/>
-                    </svg>      
-                 </div>
-                 <div class="slider-button slider-button-next">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)" fill="#EBEBEB" fill-opacity="0.7"/>
-                        <path d="M15.248 8.00599L25.121 17.879C25.6834 18.4416 25.9994 19.2045 25.9994 20C25.9994 20.7955 25.6834 21.5584 25.121 22.121L15.254 31.988L13.84 30.574L23.707 20.707C23.8945 20.5195 23.9998 20.2652 23.9998 20C23.9998 19.7348 23.8945 19.4805 23.707 19.293L13.834 9.41999L15.248 8.00599Z" fill="#F66A15"/>
-                    </svg>      
-                 </div>
-               </div>
-         </div>
-
-            <div class="promo container ">
-                <section class="card card-text-light sweet-basket">
-                    <img src="./img/sweet-basket.png" alt="сладкая корзина" class="card-image">
-                  <div class="card-header">
-                      <h3 class="card-title">Сладкая корзина</h3>
-                      <p class="card-description">Произвольный выбор десертов по Вашему желанию.</p>
-                  </div>
-                  <div class="card-footer">
-                      <strong class="card-price">ОТ 1 300 ₽</strong>
-                      <span class="card-delivery">стоимость доставки до 200 ₽</span>
-                      <a href="#" class="button button-default">Собрать корзину</a>
-                  </div>
-                </section>
-                <section class="card card-text-light minimum">
-                     <img src="./img/minimum.png" alt="минимум усилий" class="card-image">
-                  <div class="card-header">
-                      <h3 class="card-title">Минимум усилий</h3>
-                      <p class="card-description">Произвольный выбор десертов по Вашему желанию.</p>
-                  </div>
-                  <div class="card-footer">
-                      <strong class="card-price">ОТ 700 ₽</strong>
-                      <span class="card-delivery">стоимость доставки до 200 ₽</span>
-                      <a href="#" class="button button-default">Собрать корзину</a>
-                  </div>
-                 </section>
-            </div>
-
-       <section class="delivery-week container">
-           <h2 class="section-title">Доставка готовой еды на неделю</h2>
-           <div class="delivery-week-wrapper">
-              @@include('./partials/_delivery-week.html', {
-                "deliveryImage": "./img/cards/card-1.png",
-                "HeaderText": "ЗОЖ",
-                "text": "health"
-              })
-              @@include('./partials/_delivery-week.html', {
-                "deliveryImage": "./img/cards/card-2.png",
-                "HeaderText": "Овощное",
-                "text": "vegetable"
-              })
-              @@include('./partials/_delivery-week.html', {
-                "deliveryImage": "./img/cards/card-3.png",
-                "HeaderText": "Мясное ",
-                "text": "meat"
-              })
-              @@include('./partials/_delivery-week.html', {
-                "deliveryImage": "./img/cards/card-4.png",
-                "HeaderText": "Птица",
-                "text": "bird"
-              })
-              @@include('./partials/_delivery-week.html', {
-                "deliveryImage": "./img/cards/card-5.png",
-                "HeaderText": "Рыбное",
-                "text": "fish"
-              })
-              @@include('./partials/_delivery-week.html', {
-                "deliveryImage": "./img/cards/card-6.png",
-                "HeaderText": "Детское",
-                "text": "baby"
-              })
-              @@include('./partials/_delivery-week.html', {
-                "deliveryImage": "./img/cards/card-7.png",
-                "HeaderText": "Родителям",
-                "text": "parents"
-              })
-              @@include('./partials/_delivery-week.html', {
-                "deliveryImage": "./img/cards/card-8.png",
-                "HeaderText": "Праздничное",
-                "text": "holiday"
-              })
-           </div>
-       </section>
-       <section class="section-grey category">
-           <div class="container">
-              <h2 class="section-title">Категории блюд</h2>
-              <ul class="tabs">
-                 <li class="tabs-item">
-                  <button class="tabs-link" id="btn-category-popular">Популярные блюда</button>
-                </li>
-                <li class="tabs-item">
-                  <button class="tabs-link" id="btn-category-vegetables">Овощное</button>
-                </li>
-                <li class="tabs-item">
-                  <button class="tabs-link" id="btn-category-meat">Мясное</button>
-                 </li>
-              </ul>
-                <div id="popular" class="tabcontent">
-                  <h3>Популярные блюда</h3>
-                  <div class="tabs-wrapper">
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                  </div>  
-                </div>
-                <div id="vegetables" class="tabcontent">
-                  <h3>Овощное</h3>
-                  <div class="tabs-wrapper">
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                  </div>  
-                </div>
-                <div id="meat" class="tabcontent">
-                  <h3>Мясное</h3>
-                  <div class="tabs-wrapper">
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                    @@include('./partials/_tabs.html', {
-                      "TabsImage": "./img/tabs-image.png",
-                      "TabsText": "Куриные крылья под соусом Терияки",
-                      "TabsDescription": "Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...",
-                      "price":"260 ₽",
-                      "weight":"500 гр"
-                    })
-                  </div>  
-                </div>
-               <button class="button button-outline button-center">Больше блюд</button>
-          </div>
-       </section>
-       <section class="advantages">
-        <div class="container">
-          <h2 class="section-title">Наши преимущества</h2>
-          <div class="advantages-wrapper">
-            @@include('./partials/_advantages.html', {
-              "PathImage":"./img/basket.png ",
-                "AdvantagesText":"Какой путь проходит ваша еда",
-                "TextInfo":"Вы делаете заказ на коробку с недельным запасом полуфабрикатов и готовых блюд для всей семьи"
-            })
-            @@include('./partials/_advantages.html', {
-              "PathImage":"./img/production.png ",
-                "AdvantagesText":"Как происходит производство",
-                "TextInfo":"За день до доставки мы сами готовим блюда из натуральных продуктов без консервантов, красителей и гмо"
-            })
-            @@include('./partials/_advantages.html', {
-              "PathImage":"./img/quality.png ",
-                "AdvantagesText":"Высокие стандарты качества",
-                "TextInfo":"Наши повара с многолетним опытом с любовью готовят каждую порцию блюда"
-            })
-            @@include('./partials/_advantages.html', {
-              "PathImage":"./img/delivery.png ",
-                "AdvantagesText":"Быстрая и качественная доставка",
-                "TextInfo":"Сами доставим всё прямов в вашу морозилку, сохранив температурный режим  и качество наших блюд"
-            })
+   <header class="header">
+     <div class="container">
+       <div class="header__container">
+          <nav class="header__nav">
+            <div class="logo">ArtAnvil</div>
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__item-list">Каталог</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-list">О компании</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-list">Почему мы?</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-list">Наши работы</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-list">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-list">Контакты</a>
+              </li> 
+            </ul>
+            <div class="time__jobs">Ежедневно с 8:00 — 20:00 </div>
+          </nav>
+          <div class="header__contact">
+            <div class="contaсt">+375 (29) 987-65-43</div>
           </div>
         </div>
-       </section>
-   </main>
-   <footer class="footer">
-       <div class="container">
-           <div class="footer-wrapper">
-            <img  src="./img/logo1.png" alt="" class="footer-logo">
-            <nav class="footer-nav">
-                <a href="#" class="footer-link">Доставка и оплата</a>
-                <a href="#" class="footer-link">Напишите нам</a>
-            </nav>
-            <div class="social-links">
-                <a href="" class="social-link"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="14" cy="14" r="14" fill="#C4C4C4"/>
-                    <path d="M12.1102 15.9675L11.8486 19.7514C12.2228 19.7514 12.3849 19.5861 12.5793 19.3875L14.3337 17.6629L17.9692 20.4013C18.636 20.7835 19.1057 20.5822 19.2856 19.7704L21.6719 8.26942L21.6726 8.26874C21.884 7.25499 21.3161 6.85857 20.6665 7.10726L6.63983 12.6307C5.68253 13.0129 5.69703 13.5618 6.47709 13.8105L10.0631 14.9578L18.3929 9.59692C18.7849 9.32993 19.1413 9.47766 18.8481 9.74465L12.1102 15.9675Z" fill="black"/>
-                    </svg>
-                </a>
-                <a href="" class="social-link"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="14" cy="14" r="14" fill="#C4C4C4"/>
-                    <g clip-path="url(#clip0_25:278)">
-                    <path d="M19.2771 15.1609C19.0185 14.8459 19.0925 14.7057 19.2771 14.4241C19.2805 14.4209 21.4159 11.5756 21.6359 10.6107L21.6372 10.6101C21.7465 10.2584 21.6372 10 21.1085 10H19.3591C18.9138 10 18.7084 10.2218 18.5984 10.4699C18.5984 10.4699 17.7077 12.5258 16.4477 13.8584C16.041 14.2435 15.853 14.3669 15.631 14.3669C15.5217 14.3669 15.3517 14.2435 15.3517 13.8919V10.6101C15.3517 10.1884 15.227 10 14.8583 10H12.1075C11.8282 10 11.6622 10.1967 11.6622 10.3799C11.6622 10.7798 12.2922 10.8717 12.3576 11.9967V14.4376C12.3576 14.9725 12.2569 15.0709 12.0335 15.0709C11.4389 15.0709 9.99547 13.0066 9.14011 10.6441C8.96744 10.1858 8.79876 10.0006 8.35008 10.0006H6.60002C6.10067 10.0006 6 10.2224 6 10.4706C6 10.909 6.59469 13.0889 8.76543 15.9689C10.2121 17.9348 12.2496 19 14.103 19C15.217 19 15.353 18.7634 15.353 18.3565C15.353 16.4781 15.2523 16.3006 15.8103 16.3006C16.069 16.3006 16.5144 16.4241 17.5544 17.3723C18.7431 18.4966 18.9384 19 19.6038 19H21.3532C21.8519 19 22.1046 18.7634 21.9592 18.2967C21.6265 17.3151 19.3785 15.2959 19.2771 15.1609Z" fill="black"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_25:278">
-                    <rect width="16" height="9" fill="white" transform="translate(6 10)"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                </a>
-                <a href="" class="social-link"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="14" cy="14" r="14" fill="#C4C4C4"/>
-                    <path d="M17.0648 5.4668H10.7386C7.82751 5.4668 5.4668 7.82751 5.4668 10.7386V17.0648C5.4668 19.9758 7.82751 22.3365 10.7386 22.3365H17.0648C19.9758 22.3365 22.3365 19.9758 22.3365 17.0648V10.7386C22.3365 7.82751 19.9758 5.4668 17.0648 5.4668ZM20.755 17.0648C20.755 19.0997 19.0997 20.755 17.0648 20.755H10.7386C8.70368 20.755 7.04834 19.0997 7.04834 17.0648V10.7386C7.04834 8.70368 8.70368 7.04834 10.7386 7.04834H17.0648C19.0997 7.04834 20.755 8.70368 20.755 10.7386V17.0648Z" fill="black"/>
-                    <path d="M13.9015 9.68408C11.5724 9.68408 9.68408 11.5724 9.68408 13.9015C9.68408 16.2306 11.5724 18.119 13.9015 18.119C16.2306 18.119 18.119 16.2306 18.119 13.9015C18.119 11.5724 16.2306 9.68408 13.9015 9.68408ZM13.9015 16.5374C12.4486 16.5374 11.2656 15.3544 11.2656 13.9015C11.2656 12.4476 12.4486 11.2656 13.9015 11.2656C15.3544 11.2656 16.5374 12.4476 16.5374 13.9015C16.5374 15.3544 15.3544 16.5374 13.9015 16.5374Z" fill="black"/>
-                    <path d="M18.4355 9.9301C18.7459 9.9301 18.9975 9.6785 18.9975 9.36813C18.9975 9.05776 18.7459 8.80615 18.4355 8.80615C18.1251 8.80615 17.8735 9.05776 17.8735 9.36813C17.8735 9.6785 18.1251 9.9301 18.4355 9.9301Z" fill="black"/>
-                    </svg>
-                </a>
-            </div>
-           </div>
-       </div>
-   </footer>
-</body>
+     </div>
+     <div class="header__wrapper">
+      <div class="wrapper__text">ArtAnvil</div>
+      <div class="wrapper__content">Изделия художественной ковки для вашего дома</div>
+      <button class="wrapper__button">Оставить заявку</button>
+     </div>
+   </header>
+   <div class="container">
+      <h2 class="catalog__header">Каталог</h2>
+      <ul class="tabs">
+        <li class="tabs-item">
+          <button class="tabs-link" id="btn-category-popular">Ворота и заборы</button>
+        </li>
+        <li class="tabs-item">
+          <button class="tabs-link" id="btn-category-vegetables">Балконы и лестницы</button>
+        </li>
+        <li class="tabs-item">
+          <button class="tabs-link" id="btn-category-meat">Навесные сооружения</button>
+        </li>
+        <li class="tabs-item">
+          <button class="tabs-link" id="btn-category-popular">Террасы</button>
+        </li>
+        <li class="tabs-item">
+          <button class="tabs-link" id="btn-category-vegetables">Мебель</button>
+        </li>
+        <li class="tabs-item">
+          <button class="tabs-link" id="btn-category-meat">Предметы интерьера</button>
+        </li>
+        <li class="tabs-item">
+          <button class="tabs-link" id="btn-category-meat">Изделия для дома</button>
+        </li>
+      </ul>
+        <div id="popular" class="tabcontent">
+          <div class="tabs-wrapper">
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog1.png",
+              "CatalogText": "Забор с элементами ковки «Хатиора»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog2.png",
+              "CatalogText": "Кованые ворота с балясинами «Домус»  "
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog3.png",
+              "CatalogText": "Кирпичный забор с пиками «Аглаома»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog4.png",
+              "CatalogText": "Кованые ворота с поликарбонатом «Венеда» "
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog5.png",
+              "CatalogText": "Забор с поликарбонатом «Бертония»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog6.png",
+              "CatalogText": "Кованые ворота и калитка «Элена»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog7.png",
+              "CatalogText": "Забор с металлическими завитками «Хиаба»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog8.png",
+              "CatalogText": "Кованые ворота с витыми элементами «Метрофанес»"
+            })
+          </div>  
+        </div>
+        <div id="vegetables" class="tabcontent">
+          <div class="tabs-wrapper">
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog1.png",
+              "CatalogText": "Забор с элементами ковки «Хатиора»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog2.png",
+              "CatalogText": "Кованые ворота с балясинами «Домус»  "
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog3.png",
+              "CatalogText": "Кирпичный забор с пиками «Аглаома»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog4.png",
+              "CatalogText": "Кованые ворота с поликарбонатом «Венеда» "
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog5.png",
+              "CatalogText": "Забор с поликарбонатом «Бертония»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog6.png",
+              "CatalogText": "Кованые ворота и калитка «Элена»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog7.png",
+              "CatalogText": "Забор с металлическими завитками «Хиаба»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog8.png",
+              "CatalogText": "Кованые ворота с витыми элементами «Метрофанес»"
+            })
+          </div>  
+        </div>
+        <div id="meat" class="tabcontent">
+          <div class="tabs-wrapper">
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog1.png",
+              "CatalogText": "Забор с элементами ковки «Хатиора»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog2.png",
+              "CatalogText": "Кованые ворота с балясинами «Домус»  "
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog3.png",
+              "CatalogText": "Кирпичный забор с пиками «Аглаома»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog4.png",
+              "CatalogText": "Кованые ворота с поликарбонатом «Венеда» "
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog5.png",
+              "CatalogText": "Забор с поликарбонатом «Бертония»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog6.png",
+              "CatalogText": "Кованые ворота и калитка «Элена»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog7.png",
+              "CatalogText": "Забор с металлическими завитками «Хиаба»"
+            })
+            @@include('./partials/_catalog.html', {
+              "CatalogImage": "./img/catalog/catalog8.png",
+              "CatalogText": "Кованые ворота с витыми элементами «Метрофанес»"
+            })
+          </div>  
+        </div>
+      <button class="button button-outline button-center">Больше блюд</button>
+   </div>
+ </body>
 </html>

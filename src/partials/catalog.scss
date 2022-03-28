@@ -1,0 +1,26 @@
+.tabs__catalog{
+    display: flex;
+    flex-direction: column;
+    max-width: 325px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+.catalog__text{
+    font-family: 'Nunito';
+    font-style: 'Regular';
+    font-size: 20px;
+    line-height: 27px;
+}
+.catalog__button{
+    font-family: 'Nunito';
+    font-style: 'SemiBold';
+    font-size: 18px;
+    line-height: 25px;
+    border: 2px solid #565656;
+    box-sizing: border-box;
+    border-radius: 22px;
+}
+.catalog__image{
+    max-width: 100%;
+}
